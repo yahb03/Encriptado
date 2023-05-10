@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Krub:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      
+        <header class="header">
+          <div class="caja"></div>
+            <h1><img src="logo.png" alt="logo"></h1>
+            <div class="menu">
+              <a href="#">Inicio</a>
+              <a href="#">Contacto</a>
+            </div>
+        </header>
+    
+      
+      <main>
+        <div class="panel">
+
+          <div class="encriptar">
+            <label for="input-text"></label>
+            <textarea type="text1" placeholder="Escriba el texto aqui:" id="input-text" name="input-text" ></textarea>
+            <button id="encrypt-btn" style="color: white;background-color: #0A3871;">Encriptar</button>
+            <button id="decrypt-btn">Desencriptar</button>
+          </div>
+            
+          <div class="desencriptar">
+            <label for="output-text"></label>
+            <textarea placeholder="Ningún mensaje fue encontrado" img src="Munheco.png"  type="text2"  alt="Placeholder Image" id="output-text" name="output-text" required></textarea>
+            <button id="copy-btn">Copiar</button>
+          </div>
+
+          <div class="botones"> 
+            <!--botones-->
+            
+            
+          </div>
+        </div>
+      </main>
+    
+    
+
+        <script>
+            const encryptBtn = document.getElementById('encrypt-btn');
+            const decryptBtn = document.getElementById('decrypt-btn');
+            const outputText = document.getElementById('output-text');
+            const inputText = document.getElementById('input-text');
+            const copyBtn = document.getElementById('copy-btn');
+
+            function encryptText() {
+              const text = inputText.value.toLowerCase();
+              let encryptedText = '';
+              for (let i = 0; i < text.length; i++) {
+                switch (text[i]) {
+                  case 'e':
+                    encryptedText += 'enter';
+                    break;
+                  case 'i':
+                    encryptedText += 'imes';
+                    break;
+                  case 'a':
+                    encryptedText += 'ai';
+                    break;
+                  case 'o':
+                    encryptedText += 'ober';
+                    break;
+                  case 'u':
+                    encryptedText += 'ufat';
+                    break;
+                  default:
+                    encryptedText += text[i];
+                }
+              }
+              outputText.value = encryptedText;
+            }
+
+            function decryptText() {
+              const text = inputText.value.toLowerCase();
+              let decryptedText = '';
+              let i = 0;
+              while (i < text.length) {
+                if (text[i] === 'e' && text[i + 1] === 'n' && text[i + 2] === 't' && text[i + 3] === 'e' && text[i + 4] === 'r') {
+                  decryptedText += 'e';
+                  i += 5;
+                } else if (text[i] === 'i' && text[i + 1] === 'm' && text[i + 2] === 'e' && text[i + 3] === 's') {
+                  decryptedText += 'i';
+                  i += 4;
+                } else if (text[i] === 'a' && text[i + 1] === 'i') {
+                  decryptedText += 'a';
+                  i += 2;
+                } else if (text[i] === 'o' && text[i + 1] === 'b' && text[i + 2] === 'e' && text[i + 3] === 'r') {
+                  decryptedText += 'o';
+                  i += 4;
+                } else if (text[i] === 'u' && text[i + 1] === 'f' && text[i + 2] === 'a' && text[i + 3] === 't') {
+                  decryptedText += 'u';
+                  i += 4;
+                } else {
+                  decryptedText += text[i];
+                  i++;
+                }
+              }
+              outputText.value = decryptedText;
+            }
+
+            encryptBtn.addEventListener('click', encryptText);
+            decryptBtn.addEventListener('click', decryptText);
+            copyBtn.addEventListener('click', () => {
+              outputText.select();
+                document.execCommand('copy');
+            });
+
+           
+
+        </script>
+        <footer class="footer">
+          <p> Designed by Alura Developed by  Kwaltas © 2023 </p>
+      </footer>
+    </body>
+    </html>
+    
+            
+         

@@ -1,0 +1,171 @@
+header{
+  background-color: #E5E5E5;
+  padding: 1px 0;
+  text-align: justify;
+  font-family: 'Inter';
+  font-style: normal;
+  
+}
+
+body {
+  font-family: 'Inter';
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 18px;
+  background-color: #E5E5E5;
+  color: #0A3871
+
+  
+}
+.caja{
+  width: 940px;
+  position: absolute;
+  margin: 0 auto;
+
+}
+.menu{
+  text-align: center;
+}
+
+.panel{
+  width: 90px
+  background-color#E5E5E5;
+  border: 1px solid #ccc;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ccc;
+  text-align: center;
+  margin: 0 1.5%;
+}
+
+
+.encriptar{
+  display: inline-block;
+  background-color: #E5E5E5;
+  text-align:center;
+  width: 300px;
+  height: auto;
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 60px auto;
+  border-radius: 20px;
+  
+}
+
+.desencriptar{
+  display: inline-block;
+  background-color: #fff;
+  text-align: center;
+  width: 250px;
+  height:auto;
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 60px auto;
+  border-radius: 20px;
+}
+ 
+
+
+
+
+
+
+h1 {
+  text-align: justify;
+}
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+textarea[type="text1"] {
+  background-color: #E5E5E5;
+  background-image: none;
+  width: 100%;
+  height: 300px;
+  border:none;
+  padding: auto auto;
+  box-sizing: border-box;
+  text-align: justify;
+  font-family: 'Inter';
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100%;
+  color: #0A3871;
+  line-height: 150%;
+  resize: none;
+}
+
+
+
+::placeholder {
+  color: #0A3871;
+  opacity: 1; 
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+/* Firefox */
+}
+
+textarea {
+  width: 100%;
+  height: 300px;
+  box-sizing: border-box;
+  background-image: url(Munheco.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 75%;
+  border: none;
+  padding: auto auto;
+  margin: auto;
+  outline: none;
+  text-align: justify;
+  font-family: 'Inter';
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 85%;
+  color: #495057;
+  line-height: 150%;
+  resize: none;
+   
+}
+
+
+
+
+
+ 
+textarea:valid {
+  background-image: none;
+  
+}
+
+
+
+
+
+
+
+button {
+  width: 125px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: auto;
+  padding: auto auto;
+  font-family: 'Inter';
+  text-align: center;
+  font-style: bold;
+  font-weight: 400;
+  font-size: 12px;
+  border-radius: 15px;
+  
+
+}
+
+
