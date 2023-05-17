@@ -156,7 +156,7 @@ textarea {
   height: 300px;
   box-sizing: border-box;
   background-position: center;
-  background-image: url(munheco.png)
+  background-image: url(munheco.png);
   background-size: 90%;
   border: none;
   border-radius: 10px;
