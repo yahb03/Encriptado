@@ -1,3 +1,11 @@
+:root {
+  --blanco: #ffffff;
+  --primario: #FFC107;
+  --secundario: #0A3871;
+  --gris: #757575;
+  --oscuro: #212121;
+}
+
 header{
   background-color: #E5E5E5;
   padding: 1px 0;
@@ -14,10 +22,47 @@ body {
   text-align: center;
   font-size: 18px;
   background-color: #E5E5E5;
-  color: #0A3871
-
-  
+  color: #0A3871 
 }
+
+
+.nav-bg {
+  background-color: var(--secundario);
+}
+.navegacion {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width:768px) {
+  .navegacion {
+      flex-direction: row;
+      justify-content: center;
+  }
+}
+.navegacion a{
+  padding: 1rem 1rem;
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.navegacion a:hover {
+  background-color: var(--primario);
+  color: var(--oscuro);
+}
+.navegacion a:last-of-type {
+  margin-bottom:0;
+}
+@media (min-width:768px) {
+  .navegacion a{
+      margin-bottom: 0;
+  }
+}
+
+
 .caja{
   width: 940px;
   position: absolute;
@@ -56,7 +101,6 @@ body {
 
 .desencriptar{
   display: inline-block;
-  background-color: #fff;
   text-align: center;
   width: 250px;
   height:auto;
@@ -66,11 +110,6 @@ body {
   border-radius: 20px;
 }
  
-
-
-
-
-
 
 h1 {
   text-align: justify;
@@ -107,7 +146,7 @@ textarea[type="text1"] {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 150%;
 /* Firefox */
 }
@@ -116,11 +155,12 @@ textarea {
   width: 100%;
   height: 300px;
   box-sizing: border-box;
-  background-image: url(Munheco.png);
   background-position: center;
+  background-image: url("https://lh3.googleusercontent.com/CYhpjWNL0tNW-Q4icK5jfYysPzvV3w4JnUKZDZv7BAz9Gu0Dm7RzNQjPCWWinkBJmg_YktdEGetK7SvaqjRV-FLpvAveMd_XiLocPdN64kevSlo3Iut53rgsykFvc00r9Xg78fDo5pzUuuwroAVA_9AS154LoQWg2bS6JdclP3Ouo_PzM0USLNIKY_bLVc3TNprTdQmx1JJQrp0O3v0UIAsnoXH6ISQZt7nkoWsy7GRoUCGnSKzqjrlCXannlCFMe2kgQQjSx-XomupcO7cZ6wVE00hmDqi_4zPtsmh5dwqDmgg-HZtbzgVIYW0UxYew9igoRmD3nEoyEJwFaH0wMe95-nklLe06VZ6z5J0yo-9MyRvXxmkvV8IC2o2cAMjum2FsDs79uBrSefspgrGC31qqezURVrZvrvP8Di7kK6trduKeSbV5SMVZEwqmyX6AXrTufkVKi4Z2wV0EkNHqHlVdTjsZegLyNJnZX6bBCYoptxQnLkEU-yGyE-wOHDbctujErLG5WP8HRD96tW-NqKs39kaeC7Psv-hnhWlZQVBeU2HrD_LqdnPnjZr-0x0xsRILvfBAZyUX2uPD5QMuhHrQWsy_bcIC4W8V0CIq_ooubjG7MtRoUwg_GUSi-MBaCK5dsySz1wVvecRxray-zhoVOttCLvR-chfeZ7QjaVAR_0PNmw33O4NvwWD65QG5MsBw0uVXdP7saIK5MglspwxFkyga7jFO1cNAmzsQEE1pqcVMVVcNru84oOqlWWEpdukaIvdK7gYzvTPiUYGtNsSe-J-m1tGSIkXiCbNCYjPeOWknMwv9YQ2owQi7uD1n7zFqq3PLBMOFbqcyYjXmIMp1P86PUMCaYJqJNAefUpJ_CcOfW7qUgg2WVITohgeqARzlB2B0tm5UM6yS3ElFU0kKMui0U-tG2vS-XhAzAm6lYdQ-XA=w336-h500-s-no?authuser=0");
   background-repeat: no-repeat;
-  background-size: 75%;
+  background-size: 90%;
   border: none;
+  border-radius: 10px;
   padding: auto auto;
   margin: auto;
   outline: none;
@@ -137,20 +177,11 @@ textarea {
 }
 
 
-
-
-
  
 textarea:valid {
   background-image: none;
   
 }
-
-
-
-
-
-
 
 button {
   width: 125px;

@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+body {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+}
+
+.container{
+    height: 450px;
+    width: 300px;
+    box-shadow: 0 10px 20px #000;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    font-family: sans-serif;
+
+}
+
+.shape {
+    background-color: #002244;
+    height: 250px;
+    width: 400px;
+    margin-left: -20px;
+    position: relative;
+    top: -80px;
+    box-shadow: 0 2px 15px #000;
+    transform: rotate(25deg);
+
+}
+
+.image {
+    height: 100px;
+    width: 100px;
+    background-image: url(https://lh3.googleusercontent.com/qVbMs3BIlUa5eZckNj0fNBQXc9E5YKILo28sgpyuNfusl_UAflPDul_CoXJn53GZseICix-wXIg_AV6sK9SLMMdm0B7ZmHX9SQK2v6akB9XVZoAF8E5Vutf4h6q48wtm-apvnnhB_DFrtYW7OdsXm2ro_45Gwmw3abAnDNKg0l8JEl7M20ilpsjwkhrFaY7ELyzPBeqehNmt_MGA_TDpJXAZMtPboQEIrX_Dh8j7dmfB0-EKBzhMR3yzRvl5NpQ9Jt14Zi63mPzJHq8AZOMGgAUrtC9T7kki7iQ1kM2KfrnHBDOrcfyhCerVirz9sKxJ9QzAM17QZiLAIkozJQNBA4CqumWN-ndVc5-yLjOz2wohnNgdw2vmEmiyWzZ0SUBWFCmK0R5vnsZ7DfryaUJ-1DnsVGM2VlLxkhmFCHtxxr8VhXHrqoCRdi6nGmlmeACXyHcun14r9Tm8m8TDHXYOP1bQUckpBg3sI7qaRTZMZ5_2iDQSsgi-X0YG9qGSJMexuA2yOikBHZw0uuIlEAv-En9vTBn_sqXAsFSi-WuHKGctZKv7UQW-9_MgQzcruYwUTsF51Pdjyk-ZjwukPeeyiMoDJfRvO1unxMcmdQTXPpuIqpyDXkLxSLS8_y-uddWhBt-MYtm-4qiLREUJAabamPiDA4UrQYyXaHaKXkUNVvAPFR1PvubnnfsF8ohlyu6fVwIGBL3H1KeSskGY6AQv6XqvXRk6PmTGNVCcOBAu6z8IUrPsdLMGpcZns7ZkfddCZU4zze2fGJJJP4aOX_2zqVqFq_h3iqwCsjvN50SnbciOYZgb9-B1WqmClDkXfJcmrVDM-j2GXNvZWSb410R8rakY4v22vd8OPccpr0DxDog_cp7mcrho1scCmj0Rg1EuM1LAUwZqHcjNDWzS5AamDesOJSDFlMVSrH8B56PsSvyz890CTg=w446-h594-s-no?authuser=0);
+    position: relative;
+    top: 200px;
+    margin-left: 170px;
+    background-size: cover;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 15 px rgb(58,54, 54);
+    transform: rotate(-22deg);
+}
+
+.title{
+    font-size: 15px;
+    padding-bottom: 6px;
+    color: #002244
+}
+
+h3 {
+    margin-bottom: 10px;
+    
+}
+
+p{
+    text-align: center;
+    padding-left:30px ;
+    padding-right: 30px;
+    line-height: 2;
+    color: black;
+    font-size: 15px;
+}
+
+.icons i{
+    margin-left: 10px;
+    font-size: 20px;
+    transition: 3s;
+    color: #002244;
+
+
+}
+
+
+
+
+
+    
+
